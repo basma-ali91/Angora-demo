@@ -352,47 +352,38 @@ color: var(--red);
 }
 
 .carousel-indicators{
-  position: unset;
+  position: static;
 }
 
-.carousel-indicators [data-bs-target]:nth-child(1) {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  text-indent: -999px;
-  cursor: pointer;
-  background-image: url(../images/client-1.png);
-  background-position: center;
-  background-size: cover ;
- }
+#review .indicators-info{
+  display: none;
+}
 
- .carousel-indicators [data-bs-target]:nth-child(2) {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  text-indent: -999px;
-  cursor: pointer;
-  background-image: url(../images/client-2.png);
-  background-position: center;
-  background-size: cover;
- }
- .carousel-indicators [data-bs-target]:nth-child(3) {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  text-indent: -999px;
-  cursor: pointer;
-  background-image: url(../images/client-3.png);
-  background-position: center;
-  background-size: cover;
- }
 
+#review .indicators-item img.active + .indicators-info{
+  display: block;
+}
+
+#review .indicators-item img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#review .indicators-item  img.active{
+  width: 140px;
+  height: 140px;
+}
+
+#review .indicators-item .indicators-info h3{
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+#review .item-carousel-info {
+  width: 60%;
+  margin: auto;
+}
 /* end review section */
 
 /* start contact section */
@@ -549,6 +540,30 @@ footer .footer-copyright .footer-social a{
   .carousel-item .layer-content h1 {
     font-size: 2rem;
  
+  }
+
+  #review .indicators-item img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  
+  #review .indicators-item  img.active{
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  #review .indicators-item .indicators-info{
+    font-size: .5rem;
+    line-height: .5rem;
+  }
+  #review .indicators-item .indicators-info h3{
+    font-size: .5rem;
+    line-height: .5rem;
+  }
+  #review .item-carousel-info {
+    width: 80%;
+   
   }
   .down{
     display: none;
